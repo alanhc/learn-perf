@@ -138,6 +138,10 @@ function IntroSection({ t, animSpeed, showAnnotations }) {
       <div style={{ height: 24 }} />
       <EventLifecycle animSpeed={animSpeed} showAnnotations={showAnnotations} />
       <div style={{ height: 24 }} />
+      <AbstractionRosetta animSpeed={animSpeed} showAnnotations={showAnnotations} />
+      <div style={{ height: 24 }} />
+      <BottleneckMap animSpeed={animSpeed} showAnnotations={showAnnotations} />
+      <div style={{ height: 24 }} />
       <div className="grid-3">
         {t.intro.cards.map((c, i) => (
           <div key={i} className="card" style={{
