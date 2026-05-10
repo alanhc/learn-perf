@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>perf 視覺化教學儀表板</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="root"></div>
+
+<!-- speaker-notes intentionally not added -->
+
+<script>
+window.__TWEAK_DEFAULTS__ = /*EDITMODE-BEGIN*/{
+  "theme": "light",
+  "accent": "amber",
+  "fontScale": 1,
+  "monoFamily": "JetBrains Mono",
+  "sansFamily": "Noto Sans TC",
+  "animSpeed": 1,
+  "lang": "zh-Hant",
+  "showAnnotations": true
+}/*EDITMODE-END*/;
+</script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="i18n.jsx"></script>
+<script type="text/babel" src="components/shared.jsx"></script>
+<script type="text/babel" src="components/stack-flow.jsx"></script>
+<script type="text/babel" src="components/event-lifecycle.jsx"></script>
+<script type="text/babel" src="components/sampling.jsx"></script>
+<script type="text/babel" src="components/counter.jsx"></script>
+<script type="text/babel" src="components/period-freq.jsx"></script>
+<script type="text/babel" src="components/pipeline.jsx"></script>
+<script type="text/babel" src="components/terminal.jsx"></script>
+<script type="text/babel" src="components/matrix.jsx"></script>
+<script type="text/babel" src="components/callgraph.jsx"></script>
+<script type="text/babel" src="components/flamegraph.jsx"></script>
+<script type="text/babel" src="components/ik-llama.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
